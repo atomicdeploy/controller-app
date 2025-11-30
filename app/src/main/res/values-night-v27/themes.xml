@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Dark theme override - uses night colors automatically -->
+    <!-- Dark theme override for API 27+ - uses night colors automatically -->
     <style name="Theme.Controller" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Primary brand colors -->
         <item name="colorPrimary">@color/primary</item>
@@ -27,8 +27,9 @@
         <item name="android:statusBarColor">@color/background</item>
         <item name="android:windowLightStatusBar">false</item>
         
-        <!-- Navigation bar -->
+        <!-- Navigation bar - API 27+ -->
         <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLightNavigationBar">false</item>
         
         <!-- Window -->
         <item name="android:windowBackground">@color/background</item>
