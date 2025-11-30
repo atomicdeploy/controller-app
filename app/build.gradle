@@ -60,10 +60,6 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata:2.6.2'
     implementation 'androidx.lifecycle:lifecycle-runtime:2.6.2'
     
-    // Room Database
-    implementation 'androidx.room:room-runtime:2.6.1'
-    annotationProcessor 'androidx.room:room-compiler:2.6.1'
-    
     // Fragment
     implementation 'androidx.fragment:fragment:1.6.2'
     
@@ -73,8 +69,8 @@ dependencies {
     // Work Manager for background tasks
     implementation 'androidx.work:work-runtime:2.9.0'
     
-    // Network Service Discovery
-    implementation 'javax.jmdns:jmdns:3.5.8'
+    // Network Service Discovery - use org.jmdns (not javax.jmdns)
+    implementation 'org.jmdns:jmdns:3.5.8'
     
     // Testing
     testImplementation 'junit:junit:4.13.2'
