@@ -3,8 +3,8 @@
 A beautiful, modern Android application for network device discovery and control. Built with Java and traditional XML layouts, featuring Material Design 3 with vibrant colors, dark mode support, and RTL compatibility.
 
 <p align="center">
-  <img src="docs/screenshot_light.png" width="250" alt="Light Mode"/>
-  <img src="docs/screenshot_dark.png" width="250" alt="Dark Mode"/>
+  <img src="docs/screenshot_light.svg" width="250" alt="Light Mode"/>
+  <img src="docs/screenshot_dark.svg" width="250" alt="Dark Mode"/>
 </p>
 
 ## Features
