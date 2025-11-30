@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme with Material Design 3 -->
+    <style name="Theme.Controller" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        
+        <!-- Secondary brand colors -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        
+        <!-- Tertiary colors -->
+        <item name="colorTertiary">@color/tertiary</item>
+        <item name="colorOnTertiary">@color/on_tertiary</item>
+        
+        <!-- Background and surface -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        
+        <!-- Window -->
+        <item name="android:windowBackground">@color/background</item>
+        
+        <!-- Tab Layout -->
+        <item name="tabStyle">@style/Widget.Controller.TabLayout</item>
+        
+        <!-- Card -->
+        <item name="materialCardViewStyle">@style/Widget.Controller.CardView</item>
+        
+        <!-- Chip -->
+        <item name="chipStyle">@style/Widget.Controller.Chip</item>
+        
+        <!-- FAB -->
+        <item name="floatingActionButtonStyle">@style/Widget.Controller.FAB</item>
+    </style>
+
+    <!-- Dark theme variant -->
+    <style name="Theme.Controller.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="colorTertiary">@color/tertiary</item>
+        <item name="colorOnTertiary">@color/on_tertiary</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- Custom TabLayout style -->
+    <style name="Widget.Controller.TabLayout" parent="Widget.Material3.TabLayout">
+        <item name="tabIndicatorColor">@color/tab_indicator</item>
+        <item name="tabIndicatorHeight">@dimen/tab_indicator_height</item>
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabSelectedTextColor">@color/tab_selected</item>
+        <item name="tabTextColor">@color/tab_unselected</item>
+        <item name="tabRippleColor">@color/card_ripple</item>
+        <item name="tabTextAppearance">@style/TextAppearance.Controller.Tab</item>
+    </style>
+
+    <!-- Custom CardView style -->
+    <style name="Widget.Controller.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="strokeColor">@color/card_stroke</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="rippleColor">@color/card_ripple</item>
+    </style>
+
+    <!-- Outlined Card style -->
+    <style name="Widget.Controller.CardView.Outlined" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="strokeColor">@color/card_stroke</item>
+        <item name="strokeWidth">@dimen/card_stroke_width</item>
+        <item name="rippleColor">@color/card_ripple</item>
+    </style>
+
+    <!-- Custom Chip style -->
+    <style name="Widget.Controller.Chip" parent="Widget.Material3.Chip.Assist">
+        <item name="chipCornerRadius">@dimen/chip_corner_radius</item>
+        <item name="chipMinHeight">@dimen/chip_height</item>
+        <item name="chipStartPadding">@dimen/chip_padding_horizontal</item>
+        <item name="chipEndPadding">@dimen/chip_padding_horizontal</item>
+        <item name="textStartPadding">0dp</item>
+        <item name="textEndPadding">0dp</item>
+    </style>
+
+    <!-- Status chip - Online -->
+    <style name="Widget.Controller.Chip.Online">
+        <item name="chipBackgroundColor">@color/chip_saved_bg</item>
+        <item name="android:textColor">@color/chip_saved_text</item>
+        <item name="chipIconTint">@color/chip_saved_text</item>
+    </style>
+
+    <!-- Status chip - Offline -->
+    <style name="Widget.Controller.Chip.Offline">
+        <item name="chipBackgroundColor">@color/status_offline_light</item>
+        <item name="android:textColor">@color/status_offline</item>
+    </style>
+
+    <!-- Firmware chip -->
+    <style name="Widget.Controller.Chip.Firmware">
+        <item name="chipBackgroundColor">@color/chip_firmware_bg</item>
+        <item name="android:textColor">@color/chip_firmware_text</item>
+    </style>
+
+    <!-- Custom FAB style -->
+    <style name="Widget.Controller.FAB" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">@color/fab_background</item>
+        <item name="tint">@color/fab_icon</item>
+        <item name="elevation">@dimen/fab_elevation</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Controller.FAB</item>
+    </style>
+
+    <!-- Shape appearances -->
+    <style name="ShapeAppearance.Controller.FAB" parent="ShapeAppearance.Material3.Corner.Full">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Controller.Card" parent="ShapeAppearance.Material3.Corner.Medium">
+        <item name="cornerSize">@dimen/card_corner_radius</item>
+    </style>
+
+    <style name="ShapeAppearance.Controller.Chip" parent="ShapeAppearance.Material3.Corner.Full">
+        <item name="cornerSize">@dimen/chip_corner_radius</item>
+    </style>
+
+    <!-- Text appearances -->
+    <style name="TextAppearance.Controller.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">@dimen/text_size_headline</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.Controller.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.Controller.Subtitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.Controller.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.Controller.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">@dimen/text_size_caption</item>
+        <item name="android:textColor">@color/text_hint</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.Controller.Tab" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.Controller.Chip" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">@dimen/text_size_caption</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Button styles -->
+    <style name="Widget.Controller.Button" parent="Widget.Material3.Button">
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:paddingStart">@dimen/button_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/button_padding_horizontal</item>
+    </style>
+
+    <style name="Widget.Controller.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="strokeColor">@color/primary</item>
+    </style>
+
+    <style name="Widget.Controller.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:minHeight">@dimen/button_height</item>
+    </style>
+
+    <!-- Dialog style -->
+    <style name="Theme.Controller.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Controller.Dialog</item>
+        <item name="colorSurface">@color/surface</item>
+    </style>
+
+    <style name="ShapeAppearance.Controller.Dialog" parent="ShapeAppearance.Material3.Corner.ExtraLarge">
+        <item name="cornerSize">@dimen/dialog_corner_radius</item>
+    </style>
+
+    <!-- Bottom Sheet style -->
+    <style name="Theme.Controller.BottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.Controller.BottomSheet</item>
+    </style>
+
+    <style name="Widget.Controller.BottomSheet" parent="Widget.Material3.BottomSheet">
+        <item name="shapeAppearance">@style/ShapeAppearance.Controller.BottomSheet</item>
+        <item name="backgroundTint">@color/surface</item>
+    </style>
+
+    <style name="ShapeAppearance.Controller.BottomSheet" parent="ShapeAppearance.Material3.Corner.ExtraLarge">
+        <item name="cornerSizeTopLeft">@dimen/bottom_sheet_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/bottom_sheet_corner_radius</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <!-- Toolbar style -->
+    <style name="Widget.Controller.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.Controller.Title</item>
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <!-- Search style -->
+    <style name="Widget.Controller.SearchView" parent="Widget.Material3.SearchView">
+        <item name="backgroundTint">@color/surface_variant</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Controller.Search</item>
+    </style>
+
+    <style name="ShapeAppearance.Controller.Search" parent="ShapeAppearance.Material3.Corner.Full">
+        <item name="cornerSize">28dp</item>
+    </style>
+</resources>

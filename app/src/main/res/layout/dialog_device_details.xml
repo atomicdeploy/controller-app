@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dialog_padding">
+
+        <!-- Header with Icon and Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/spacing_xl">
+
+            <FrameLayout
+                android:layout_width="@dimen/device_icon_background_size"
+                android:layout_height="@dimen/device_icon_background_size">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_device_icon" />
+
+                <ImageView
+                    android:id="@+id/deviceIcon"
+                    android:layout_width="@dimen/device_icon_size"
+                    android:layout_height="@dimen/device_icon_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_device_unknown"
+                    android:tint="@color/on_primary"
+                    android:contentDescription="@string/cd_device_icon" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/deviceName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/spacing_lg"
+                android:textAppearance="@style/TextAppearance.Controller.Title"
+                android:textColor="@color/text_primary"
+                tools:text="Living Room Controller" />
+
+        </LinearLayout>
+
+        <!-- Info Grid -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_info_container"
+            android:padding="@dimen/spacing_lg">
+
+            <!-- IP Address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/spacing_md">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_icon_size"
+                    android:layout_height="@dimen/menu_icon_size"
+                    android:src="@drawable/ic_lan"
+                    android:tint="@color/icon_tint"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_lg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_ip_address"
+                        android:textAppearance="@style/TextAppearance.Controller.Caption"
+                        android:textColor="@color/text_hint" />
+
+                    <TextView
+                        android:id="@+id/ipAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.Controller.Body"
+                        android:textColor="@color/text_primary"
+                        tools:text="192.168.1.100" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- MAC Address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/spacing_md">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_icon_size"
+                    android:layout_height="@dimen/menu_icon_size"
+                    android:src="@drawable/ic_memory"
+                    android:tint="@color/icon_tint"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_lg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_mac_address"
+                        android:textAppearance="@style/TextAppearance.Controller.Caption"
+                        android:textColor="@color/text_hint" />
+
+                    <TextView
+                        android:id="@+id/macAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.Controller.Body"
+                        android:textColor="@color/text_primary"
+                        tools:text="AA:BB:CC:DD:EE:FF" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Hostname -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/spacing_md">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_icon_size"
+                    android:layout_height="@dimen/menu_icon_size"
+                    android:src="@drawable/ic_dns"
+                    android:tint="@color/icon_tint"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_lg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_hostname"
+                        android:textAppearance="@style/TextAppearance.Controller.Caption"
+                        android:textColor="@color/text_hint" />
+
+                    <TextView
+                        android:id="@+id/hostname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.Controller.Body"
+                        android:textColor="@color/text_primary"
+                        tools:text="device-hostname.local" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Manufacturer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/spacing_md">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_icon_size"
+                    android:layout_height="@dimen/menu_icon_size"
+                    android:src="@drawable/ic_business"
+                    android:tint="@color/icon_tint"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_lg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_manufacturer"
+                        android:textAppearance="@style/TextAppearance.Controller.Caption"
+                        android:textColor="@color/text_hint" />
+
+                    <TextView
+                        android:id="@+id/manufacturer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.Controller.Body"
+                        android:textColor="@color/text_primary"
+                        tools:text="Apple Inc." />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Firmware -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/spacing_md">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_icon_size"
+                    android:layout_height="@dimen/menu_icon_size"
+                    android:src="@drawable/ic_firmware"
+                    android:tint="@color/icon_tint"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_lg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_firmware"
+                        android:textAppearance="@style/TextAppearance.Controller.Caption"
+                        android:textColor="@color/text_hint" />
+
+                    <TextView
+                        android:id="@+id/firmwareVersion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.Controller.Body"
+                        android:textColor="@color/text_primary"
+                        tools:text="1.2.3" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Last Seen -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/spacing_md">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_icon_size"
+                    android:layout_height="@dimen/menu_icon_size"
+                    android:src="@drawable/ic_schedule"
+                    android:tint="@color/icon_tint"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_lg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_last_seen"
+                        android:textAppearance="@style/TextAppearance.Controller.Caption"
+                        android:textColor="@color/text_hint" />
+
+                    <TextView
+                        android:id="@+id/lastSeen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.Controller.Body"
+                        android:textColor="@color/text_primary"
+                        tools:text="Just now" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Discovery Method -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_icon_size"
+                    android:layout_height="@dimen/menu_icon_size"
+                    android:src="@drawable/ic_wifi_find"
+                    android:tint="@color/icon_tint"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_lg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discovery Method"
+                        android:textAppearance="@style/TextAppearance.Controller.Caption"
+                        android:textColor="@color/text_hint" />
+
+                    <TextView
+                        android:id="@+id/discoveryMethod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.Controller.Body"
+                        android:textColor="@color/text_primary"
+                        tools:text="mDNS, ARP" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

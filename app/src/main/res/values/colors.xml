@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors - Vibrant Teal/Cyan -->
+    <color name="primary">#00BCD4</color>
+    <color name="primary_variant">#0097A7</color>
+    <color name="primary_dark">#00838F</color>
+    <color name="primary_light">#4DD0E1</color>
+    
+    <!-- Secondary Colors - Vibrant Purple/Violet -->
+    <color name="secondary">#7C4DFF</color>
+    <color name="secondary_variant">#651FFF</color>
+    <color name="secondary_dark">#6200EA</color>
+    <color name="secondary_light">#B388FF</color>
+    
+    <!-- Tertiary/Accent Colors - Vibrant Orange -->
+    <color name="tertiary">#FF6D00</color>
+    <color name="tertiary_light">#FF9E40</color>
+    
+    <!-- Surface Colors - Light Mode -->
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F5F5F5</color>
+    <color name="surface_elevated">#FFFFFF</color>
+    <color name="background">#FAFAFA</color>
+    
+    <!-- On Colors - Light Mode -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_tertiary">#FFFFFF</color>
+    <color name="on_surface">#1C1B1F</color>
+    <color name="on_surface_variant">#49454F</color>
+    <color name="on_background">#1C1B1F</color>
+    
+    <!-- Text Colors - Light Mode -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+    <color name="text_disabled">#BDBDBD</color>
+    
+    <!-- Status Colors -->
+    <color name="status_online">#4CAF50</color>
+    <color name="status_online_light">#81C784</color>
+    <color name="status_offline">#F44336</color>
+    <color name="status_offline_light">#E57373</color>
+    <color name="status_warning">#FF9800</color>
+    <color name="status_info">#2196F3</color>
+    
+    <!-- Chip/Badge Colors -->
+    <color name="chip_saved_bg">#E8F5E9</color>
+    <color name="chip_saved_text">#2E7D32</color>
+    <color name="chip_discovered_bg">#E3F2FD</color>
+    <color name="chip_discovered_text">#1565C0</color>
+    <color name="chip_firmware_bg">#FFF3E0</color>
+    <color name="chip_firmware_text">#E65100</color>
+    
+    <!-- Card Colors -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_stroke">#E0E0E0</color>
+    <color name="card_ripple">#20000000</color>
+    
+    <!-- Divider -->
+    <color name="divider">#E0E0E0</color>
+    
+    <!-- Icon Colors -->
+    <color name="icon_primary">#616161</color>
+    <color name="icon_secondary">#9E9E9E</color>
+    <color name="icon_tint">#00BCD4</color>
+    
+    <!-- Gradient Colors for Device Icons -->
+    <color name="gradient_start">#00BCD4</color>
+    <color name="gradient_end">#7C4DFF</color>
+    
+    <!-- Tab Colors -->
+    <color name="tab_selected">#00BCD4</color>
+    <color name="tab_unselected">#9E9E9E</color>
+    <color name="tab_indicator">#00BCD4</color>
+    
+    <!-- FAB Colors -->
+    <color name="fab_background">#7C4DFF</color>
+    <color name="fab_icon">#FFFFFF</color>
+    
+    <!-- Shimmer/Loading -->
+    <color name="shimmer_base">#E0E0E0</color>
+    <color name="shimmer_highlight">#F5F5F5</color>
+    
+    <!-- Transparent variants -->
+    <color name="transparent">#00000000</color>
+    <color name="scrim">#80000000</color>
+    <color name="overlay_light">#10000000</color>
+</resources>
