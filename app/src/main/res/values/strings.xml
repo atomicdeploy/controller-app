@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Controller</string>
+    <string name="app_description">Network Device Discovery &amp; Control</string>
+    
+    <!-- Navigation -->
+    <string name="nav_saved">Saved</string>
+    <string name="nav_discovered">Discovered</string>
+    <string name="nav_settings">Settings</string>
+    
+    <!-- Tabs -->
+    <string name="tab_saved_devices">Saved Devices</string>
+    <string name="tab_discovered_devices">Discovered</string>
+    
+    <!-- Device Status -->
+    <string name="status_online">Online</string>
+    <string name="status_offline">Offline</string>
+    <string name="status_saved">Saved</string>
+    <string name="status_discovered">Discovered</string>
+    
+    <!-- Device Actions -->
+    <string name="action_connect">Connect</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_save">Save Device</string>
+    <string name="action_unsave">Remove from Saved</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_ping">Ping</string>
+    <string name="action_wake_on_lan">Wake on LAN</string>
+    <string name="action_copy_ip">Copy IP Address</string>
+    <string name="action_copy_mac">Copy MAC Address</string>
+    <string name="action_view_details">View Details</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ok">OK</string>
+    <string name="action_done">Done</string>
+    <string name="action_search">Search</string>
+    <string name="action_scan">Scan Network</string>
+    
+    <!-- Device Info Labels -->
+    <string name="label_device_name">Device Name</string>
+    <string name="label_hostname">Hostname</string>
+    <string name="label_ip_address">IP Address</string>
+    <string name="label_mac_address">MAC Address</string>
+    <string name="label_manufacturer">Manufacturer</string>
+    <string name="label_firmware">Firmware</string>
+    <string name="label_device_type">Device Type</string>
+    <string name="label_last_seen">Last Seen</string>
+    <string name="label_notes">Notes</string>
+    <string name="label_unknown">Unknown</string>
+    
+    <!-- Placeholders -->
+    <string name="hint_search_devices">Search devices…</string>
+    <string name="hint_device_name">Enter device name</string>
+    <string name="hint_notes">Add notes about this device</string>
+    
+    <!-- Empty States -->
+    <string name="empty_saved_title">No Saved Devices</string>
+    <string name="empty_saved_subtitle">Save devices from the Discovered tab to access them quickly</string>
+    <string name="empty_discovered_title">No Devices Found</string>
+    <string name="empty_discovered_subtitle">Pull down to refresh or tap the scan button</string>
+    <string name="empty_search_title">No Results</string>
+    <string name="empty_search_subtitle">Try a different search term</string>
+    
+    <!-- Dialogs -->
+    <string name="dialog_delete_title">Delete Device</string>
+    <string name="dialog_delete_message">Are you sure you want to remove this device?</string>
+    <string name="dialog_edit_title">Edit Device</string>
+    <string name="dialog_add_title">Add Device</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_general">General</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_system">System Default</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_auto_scan">Auto-scan on startup</string>
+    <string name="settings_scan_interval">Scan interval</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_notify_new_device">Notify on new device</string>
+    <string name="settings_notify_device_offline">Notify when device goes offline</string>
+    <string name="settings_about">About</string>
+    <string name="settings_version">Version</string>
+    <string name="settings_licenses">Open Source Licenses</string>
+    
+    <!-- Snackbar / Toast Messages -->
+    <string name="msg_device_saved">Device saved</string>
+    <string name="msg_device_removed">Device removed</string>
+    <string name="msg_device_deleted">Device deleted</string>
+    <string name="msg_ip_copied">IP address copied</string>
+    <string name="msg_mac_copied">MAC address copied</string>
+    <string name="msg_scanning">Scanning network…</string>
+    <string name="msg_scan_complete">Scan complete</string>
+    <string name="msg_connection_failed">Connection failed</string>
+    <string name="msg_ping_success">Ping successful</string>
+    <string name="msg_ping_failed">Ping failed</string>
+    <string name="msg_wol_sent">Wake-on-LAN packet sent</string>
+    
+    <!-- Accessibility -->
+    <string name="cd_device_icon">Device icon</string>
+    <string name="cd_status_indicator">Device status indicator</string>
+    <string name="cd_more_options">More options</string>
+    <string name="cd_refresh">Refresh device list</string>
+    <string name="cd_add_device">Add new device</string>
+    <string name="cd_search">Search devices</string>
+    <string name="cd_settings">Open settings</string>
+    <string name="cd_back">Go back</string>
+    <string name="cd_close">Close</string>
+    
+    <!-- Time Formatting -->
+    <string name="time_just_now">Just now</string>
+    <string name="time_minutes_ago">%d min ago</string>
+    <string name="time_hours_ago">%d hr ago</string>
+    <string name="time_days_ago">%d days ago</string>
+    <string name="time_never">Never</string>
+</resources>

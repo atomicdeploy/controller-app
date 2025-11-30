@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dimensions for spacing and sizing - following Material Design 3 guidelines -->
+    
+    <!-- Base spacing unit (4dp grid) -->
+    <dimen name="spacing_xxs">2dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">12dp</dimen>
+    <dimen name="spacing_lg">16dp</dimen>
+    <dimen name="spacing_xl">24dp</dimen>
+    <dimen name="spacing_xxl">32dp</dimen>
+    <dimen name="spacing_xxxl">48dp</dimen>
+    
+    <!-- Card dimensions -->
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_margin">12dp</dimen>
+    <dimen name="card_stroke_width">1dp</dimen>
+    
+    <!-- Device icon -->
+    <dimen name="device_icon_size">48dp</dimen>
+    <dimen name="device_icon_padding">12dp</dimen>
+    <dimen name="device_icon_background_size">64dp</dimen>
+    <dimen name="device_icon_corner_radius">16dp</dimen>
+    
+    <!-- Status indicator -->
+    <dimen name="status_indicator_size">12dp</dimen>
+    <dimen name="status_indicator_stroke">2dp</dimen>
+    <dimen name="status_indicator_offset">-4dp</dimen>
+    
+    <!-- Chip/Badge dimensions -->
+    <dimen name="chip_height">28dp</dimen>
+    <dimen name="chip_corner_radius">14dp</dimen>
+    <dimen name="chip_padding_horizontal">12dp</dimen>
+    <dimen name="chip_padding_vertical">4dp</dimen>
+    <dimen name="chip_icon_size">16dp</dimen>
+    <dimen name="chip_spacing">6dp</dimen>
+    
+    <!-- Text sizes -->
+    <dimen name="text_size_headline">24sp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_subtitle">16sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_caption">12sp</dimen>
+    <dimen name="text_size_overline">10sp</dimen>
+    
+    <!-- Button dimensions -->
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_corner_radius">24dp</dimen>
+    <dimen name="button_padding_horizontal">24dp</dimen>
+    <dimen name="button_icon_size">24dp</dimen>
+    
+    <!-- FAB dimensions -->
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_mini_size">40dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    
+    <!-- Toolbar -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_elevation">0dp</dimen>
+    
+    <!-- Tab -->
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="tab_indicator_height">3dp</dimen>
+    <dimen name="tab_indicator_corner_radius">1.5dp</dimen>
+    
+    <!-- Bottom sheet -->
+    <dimen name="bottom_sheet_corner_radius">28dp</dimen>
+    <dimen name="bottom_sheet_peek_height">400dp</dimen>
+    
+    <!-- Dialog -->
+    <dimen name="dialog_corner_radius">28dp</dimen>
+    <dimen name="dialog_padding">24dp</dimen>
+    <dimen name="dialog_min_width">280dp</dimen>
+    
+    <!-- Input field -->
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="input_corner_radius">8dp</dimen>
+    <dimen name="input_padding">16dp</dimen>
+    
+    <!-- Divider -->
+    <dimen name="divider_height">1dp</dimen>
+    
+    <!-- Empty state -->
+    <dimen name="empty_icon_size">120dp</dimen>
+    <dimen name="empty_max_width">280dp</dimen>
+    
+    <!-- Context menu (3 dots) -->
+    <dimen name="menu_icon_size">24dp</dimen>
+    <dimen name="menu_touch_target">48dp</dimen>
+    
+    <!-- Swipe refresh -->
+    <dimen name="swipe_refresh_offset">64dp</dimen>
+    
+    <!-- List item -->
+    <dimen name="list_item_min_height">72dp</dimen>
+    <dimen name="list_item_icon_margin">16dp</dimen>
+</resources>

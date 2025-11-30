@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/spacing_sm"
+    android:layout_marginVertical="@dimen/spacing_xs"
+    android:clickable="true"
+    android:focusable="true"
+    android:layoutDirection="locale"
+    app:cardBackgroundColor="@color/card_background"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:rippleColor="@color/card_ripple"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/card_padding">
+
+        <!-- Device Icon with Status Indicator -->
+        <FrameLayout
+            android:id="@+id/iconContainer"
+            android:layout_width="@dimen/device_icon_background_size"
+            android:layout_height="@dimen/device_icon_background_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <!-- Gradient Background for Icon -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_device_icon" />
+
+            <ImageView
+                android:id="@+id/deviceIcon"
+                android:layout_width="@dimen/device_icon_size"
+                android:layout_height="@dimen/device_icon_size"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_device_unknown"
+                android:tint="@color/on_primary"
+                android:contentDescription="@string/cd_device_icon" />
+
+            <!-- Online/Offline Status Indicator -->
+            <View
+                android:id="@+id/statusIndicator"
+                android:layout_width="@dimen/status_indicator_size"
+                android:layout_height="@dimen/status_indicator_size"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="@dimen/status_indicator_offset"
+                android:layout_marginBottom="@dimen/status_indicator_offset"
+                android:background="@drawable/bg_status_online"
+                android:contentDescription="@string/cd_status_indicator" />
+
+        </FrameLayout>
+
+        <!-- Device Name (Primary Line) -->
+        <TextView
+            android:id="@+id/deviceName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_lg"
+            android:layout_marginEnd="@dimen/spacing_sm"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Controller.Subtitle"
+            android:textColor="@color/text_primary"
+            app:layout_constraintEnd_toStartOf="@id/menuButton"
+            app:layout_constraintStart_toEndOf="@id/iconContainer"
+            app:layout_constraintTop_toTopOf="@id/iconContainer"
+            tools:text="Living Room Controller" />
+
+        <!-- Device Subtitle (Secondary Line: IP + Manufacturer) -->
+        <TextView
+            android:id="@+id/deviceSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_lg"
+            android:layout_marginTop="@dimen/spacing_xxs"
+            android:layout_marginEnd="@dimen/spacing_sm"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Controller.Body"
+            android:textColor="@color/text_secondary"
+            app:layout_constraintEnd_toStartOf="@id/menuButton"
+            app:layout_constraintStart_toEndOf="@id/iconContainer"
+            app:layout_constraintTop_toBottomOf="@id/deviceName"
+            tools:text="192.168.1.100 • Apple Inc." />
+
+        <!-- Chips Container -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_lg"
+            android:layout_marginTop="@dimen/spacing_sm"
+            android:layout_marginEnd="@dimen/spacing_sm"
+            app:chipSpacingHorizontal="@dimen/chip_spacing"
+            app:layout_constraintEnd_toStartOf="@id/menuButton"
+            app:layout_constraintStart_toEndOf="@id/iconContainer"
+            app:layout_constraintTop_toBottomOf="@id/deviceSubtitle">
+
+            <!-- Online/Offline Status Chip -->
+            <com.google.android.material.chip.Chip
+                android:id="@+id/statusChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_online"
+                android:textAppearance="@style/TextAppearance.Controller.Chip"
+                app:chipBackgroundColor="@color/chip_saved_bg"
+                app:chipCornerRadius="@dimen/chip_corner_radius"
+                app:chipIcon="@drawable/ic_check_circle"
+                app:chipIconSize="@dimen/chip_icon_size"
+                app:chipIconTint="@color/chip_saved_text"
+                app:chipMinHeight="@dimen/chip_height"
+                app:chipMinTouchTargetSize="0dp"
+                app:chipStartPadding="@dimen/spacing_sm"
+                app:chipEndPadding="@dimen/spacing_md"
+                app:iconStartPadding="@dimen/spacing_xs"
+                android:textColor="@color/chip_saved_text"
+                android:clickable="false" />
+
+            <!-- Firmware Version Chip -->
+            <com.google.android.material.chip.Chip
+                android:id="@+id/firmwareChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="v1.2.3"
+                android:textAppearance="@style/TextAppearance.Controller.Chip"
+                app:chipBackgroundColor="@color/chip_firmware_bg"
+                app:chipCornerRadius="@dimen/chip_corner_radius"
+                app:chipIcon="@drawable/ic_firmware"
+                app:chipIconSize="@dimen/chip_icon_size"
+                app:chipIconTint="@color/chip_firmware_text"
+                app:chipMinHeight="@dimen/chip_height"
+                app:chipMinTouchTargetSize="0dp"
+                app:chipStartPadding="@dimen/spacing_sm"
+                app:chipEndPadding="@dimen/spacing_md"
+                app:iconStartPadding="@dimen/spacing_xs"
+                android:textColor="@color/chip_firmware_text"
+                android:clickable="false"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <!-- Saved Badge -->
+            <com.google.android.material.chip.Chip
+                android:id="@+id/savedChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_saved"
+                android:textAppearance="@style/TextAppearance.Controller.Chip"
+                app:chipBackgroundColor="@color/chip_discovered_bg"
+                app:chipCornerRadius="@dimen/chip_corner_radius"
+                app:chipIcon="@drawable/ic_bookmark"
+                app:chipIconSize="@dimen/chip_icon_size"
+                app:chipIconTint="@color/chip_discovered_text"
+                app:chipMinHeight="@dimen/chip_height"
+                app:chipMinTouchTargetSize="0dp"
+                app:chipStartPadding="@dimen/spacing_sm"
+                app:chipEndPadding="@dimen/spacing_md"
+                app:iconStartPadding="@dimen/spacing_xs"
+                android:textColor="@color/chip_discovered_text"
+                android:clickable="false"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Context Menu Button (•••) -->
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="@dimen/menu_touch_target"
+            android:layout_height="@dimen/menu_touch_target"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_more_options"
+            android:src="@drawable/ic_more_vert"
+            android:tint="@color/icon_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
